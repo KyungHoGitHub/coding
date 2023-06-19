@@ -26,3 +26,18 @@ func Contain(arr []int, value int) bool {
 ```
 
 ## javaScript
+<img width="888" alt="스크린샷 2023-06-20 오전 1 52 53" src="https://github.com/KyungHoGitHub/coding/assets/119731100/28ea0ce3-4bdf-4fbd-bcf7-4d0bbab8da3d">
+
+```
+function solution(s) {
+    var answer = '';
+    for (let i = 0; i < s.length; i++) {
+      if (i === 0 || s[i-1] === " ") {
+        answer += s[i].toUpperCase();
+      } else {
+        answer += s[i].toLowerCase();
+      }
+    }
+    return answer;
+}
+```
