@@ -8,17 +8,17 @@
 func solution(arr []int, delete_list []int) []int {
  var ret []int //ret 빈 배열을 생성
     for _, item := range arr { //arr 배열의 길이 만큼 순회
-        if !Contain(delete_list, item) {
-            ret = append(ret, item)
+        if !Contain(delete_list, item) {  // Contain 함수에 매개변수 delet_list 배열 , item
+            ret = append(ret, item)       // ret [] 빈 배열에 조건문에 false경우 값을 append
         }
     }
     return ret
 }
 
-func Contain(arr []int, value int) bool {
-    for _, item := range arr {
-        if item == value {
-            return true
+func Contain(arr []int, value int) bool { //Contain 포함 함수 생성
+    for _, item := range arr {            // 매개변수 arr 길이만큼 순회
+        if item == value {                // arr 의 item 과 매개변수 value 값이 같으면 true를 반환
+            return true  
         }
     }
     return false
