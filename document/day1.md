@@ -30,9 +30,11 @@ range 오른쪽영영 `range expression` 코드에선 arr 배열에는 다음과
 배열,배열 포인터 / 슬라이스 / 문자열 / 맵 / 채널
 
 ## ✏️ for range 문
+```
 for key, val := range exMap {
      fmt.Println(key,val)
 }
+```
 맵의 모든 요소를 순회하며 출력 할 수있습니다
 ## javaScript
 <img width="888" alt="스크린샷 2023-06-20 오전 1 52 53" src="https://github.com/KyungHoGitHub/coding/assets/119731100/28ea0ce3-4bdf-4fbd-bcf7-4d0bbab8da3d">
